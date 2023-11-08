@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+body{
+    text-align: center;
+    overflow-y: hidden;
+    background: rgba(0, 0, 0, 0.267);
+}
+h1 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.btn-container{
+    /* display: grid;
+    grid-template-columns: auto auto; */
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn{
+    width: 200px;
+    height: 200px;
+    border-radius: 20%;
+    border: 10px solid black;
+    margin: 3rem;
+}
+.yellow{
+    background: #f99550;
+}
+.red{
+    background:#d95980 ;
+}
+.purple{
+    background: rgba(141, 7, 141, 0.788);
+}
+.green{
+    background: #63aac0;
+}
+.flash{
+    background: white;
+}
+.userFlash{
+    background: green;
+}
