@@ -1,6 +1,7 @@
 let gameSeq = [];
 let userSeq = [];
 let level = 0;
+let highestLevel=[]
 let btns = ["yellow", "purple", "red", "green"]
 let started = false;
 let h2 = document.querySelector("h2")
@@ -29,6 +30,11 @@ function levelUp() {
     userSeq=[];
     level++;
     h2.innerText = `Level ${level}`
+    highestLevel.push(level)
+    // console.log(highestLevel)
+   let  highestLevelOfUser = Math.max(...highestLevel)
+   console.log(highestLevelOfUser)
+   document.querySelector("span").innerText = `${highestLevelOfUser}`
     // let btn = document.querySelector("")
 
     //random button choose
